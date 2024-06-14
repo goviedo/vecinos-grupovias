@@ -1,6 +1,5 @@
 ---
 // Component Imports
-import Button from '../components/Button.astro';
 import Navbar from '../components/Navbar.astro';
 
 // Full Astro Component Syntax:
@@ -18,9 +17,32 @@ import Navbar from '../components/Navbar.astro';
 
 	<body>
 		<Navbar/>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+		<div class="flex justify-center grid mt-10 p-4 content-center">
+			<h1 class="text-3xl font-bold leading-tight text-center">
+				Grupo Vías. <br/>Inmobiliaria O'Higgins 100. <br />
+				<h2 class="text-2xl font-bold leading-tight text-center text-red-500">Problemas Recurrentes y Defectos.</h2>
+				<h2 class="text-1xl font-bold leading-tight text-center text-blue-500">Haz click arriba a la izquierda para el men&uacute;.</h2>
+			</h1>
+			<ul class="bg-gray-10 p-4 mt-2 rounded-lg shadow-md">
+				<li class="flex items-center py-2">
+				  <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+				  </svg>
+				  <a href="/gallery" class="text-black-300 hover:bg-green-700 hover:text-blue block px-3 py-2 rounded-md text-base font-medium">Defectos</a>
+				</li>
+				<li class="flex items-center py-2">
+				  <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+				  </svg>
+				  <a href="/video" class="text-black-300 hover:bg-green-700 hover:text-blue block px-3 py-2 rounded-md text-base font-medium">Videos</a>
+				</li>
+				<li class="flex items-center py-2">
+				  <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+				  </svg>
+				  <a href="/responsables" class="text-black-300 hover:bg-green-700 hover:text-blue block px-3 py-2 rounded-md text-base font-medium">Responsables</a>
+				</li>
+			  </ul>
 		</div>
 	</body>
 </html>
